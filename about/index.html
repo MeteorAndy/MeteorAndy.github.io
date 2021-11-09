@@ -24,7 +24,7 @@
 <meta property="og:description" content="随便写点什么东西，或者B站视频的文案，总之就是啥都有">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-11-08T13:14:34.000Z">
-<meta property="article:modified_time" content="2021-11-08T13:14:51.024Z">
+<meta property="article:modified_time" content="2021-11-09T09:51:36.444Z">
 <meta property="article:author" content="流星胖胖（MeteorAndy）">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -159,7 +159,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/bg/blender.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -184,7 +184,7 @@
           >
           
             <div class="about-avatar">
-              <img src="/img/avatar.png" srcset="/img/loading.gif" lazyload
+              <img src="https://avatars.githubusercontent.com/u/73278736?v=4" srcset="/img/loading.gif" lazyload
                    class="img-fluid" alt="avatar">
             </div>
           
@@ -195,14 +195,14 @@
 
 <div class="text-center">
   <div class="about-info">
-    <div class="about-name">Fluid</div>
-    <div class="about-intro">An elegant theme for Hexo</div>
+    <div class="about-name">流星胖胖</div>
+    <div class="about-intro">一个整天不务正业的预备役码农</div>
     <div class="about-icons">
       
         
         
         
-        <a href=https://github.com class="
+        <a href=https://github.com/MeteorAndy class="
            hint--bottom hint--rounded"
            aria-label=GitHub
            target="_blank"
@@ -214,12 +214,12 @@
         
         
         
-        <a href=https://douban.com class="
+        <a href=https://space.bilibili.com/5890374 class="
            hint--bottom hint--rounded"
-           aria-label=豆瓣
+           aria-label=B站
            target="_blank"
         >
-          <i class="iconfont icon-douban-fill" aria-hidden="true"></i>
+          <i class="iconfont icon-bilibili" aria-hidden="true"></i>
           
         </a>
       
@@ -233,7 +233,21 @@
         >
           <i class="iconfont icon-wechat-fill" aria-hidden="true"></i>
           
-            <img class="qr-img" src="/img/favicon.png" srcset="/img/loading.gif" lazyload alt="qrcode" />
+            <img class="qr-img" src="/img/qr_code/wechat.png" srcset="/img/loading.gif" lazyload alt="qrcode" />
+          
+        </a>
+      
+        
+        
+        
+        <a  class="qr-trigger
+           "
+           
+           target="_self"
+        >
+          <i class="iconfont icon-alipay-fill" aria-hidden="true"></i>
+          
+            <img class="qr-img" src="/img/qr_code/AliPay.png" srcset="/img/loading.gif" lazyload alt="qrcode" />
           
         </a>
       
@@ -246,6 +260,36 @@
     
   </div>
 
+  
+    <!-- Comments -->
+    <article class="comments" id="comments" lazyload>
+      
+      
+        
+      
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"DpHUGCpJskfsvul9py9gnP22-9Nh9j0Va","appKey":"lIWlKO4kQ2PL8vpNLiY2uFNy","path":"window.location.pathname","placeholder":"欢迎评论~~~","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
   
 </article>
 
